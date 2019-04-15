@@ -17,7 +17,7 @@ if (mode === null) {
 } else if (mode === 'true') {
   document.body.style.backgroundColor = 'white'
   document.body.style.color = 'black'
-} else if (mode === 'false') {
+} else {
   document.body.style.backgroundColor = 'black'
   document.body.style.color = 'white'
 }
@@ -28,7 +28,7 @@ button.addEventListener('click', function () {
     window.localStorage.setItem('value', mode)
     document.body.style.backgroundColor = 'white'
     document.body.style.color = 'black'
-  } else if (mode === 'true') {
+  } else {
     mode = 'false'
     window.localStorage.setItem('value', mode)
     document.body.style.backgroundColor = 'black'
